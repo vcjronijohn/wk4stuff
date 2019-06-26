@@ -1,0 +1,15 @@
+h1 {
+    font-size: 34px;
+    color: #aaa;
+    font-weight: bold;
+    margin: 30px;
+}
+.text {
+	text-align: center;
+}
+.hidden {
+	display: none;
+}
+.show {
+	display: block;
+}
