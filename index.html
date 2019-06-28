@@ -15,8 +15,8 @@
     <h1 id="clubhouse" style="color: #ccc; font-weight: bold; margin: 20px;">Code Boot Camp @theClubhou.se</h1>
     <h2 id="alth2" style="color: rgb(99, 105, 131); font-weight: bolder; margin: 10px;">TenaciousV</h2>
     <div id="para"> Wow, this coding thing is a bitch. </div>
-    <div>Some of the content from college is coming back to me, </div>
-    <div>but damn. Should have done this years ago.</div>
+    <p>Some of the content from college is coming back to me, </p>
+    <p>but damn. Should have done this years ago.</p>
     <ul style="font: bolder" id="litxt">Couple of things I've learned during this:
         <li style="color: DarkGreen">Work on really grasping things you understand,</li>
         <li style="color: DarkGreen">so that you can go back and get up to speed on the things that really mystify you.</li>
@@ -24,20 +24,27 @@
     </ul>
     
     <button onclick='addClass()'> Show Text </button>
-    <p id="text" class="text hidden">This is the magic text</p>
-
+    <p id="text" class="text hidden">This is the magic text</p>;
+ 
     <p id="p2">Hello World!</p>
+    <!-- <button > Click </button>
+    <p id="chng" class="text hidden">The Contessa</p>;   -->
 
 <script>
+function changetxt() {
+    document.getElementById('alth2').innerText = "The Contessa"
+}
+
+// document.getElementById("p2").addEventListener("click", changetxt());
 document.getElementById("p2").style.color = "CornflowerBlue";
 document.getElementById("clubhouse").style.color = "DarkRed";
 document.getElementById("para").style.color = "Orchid";
 document.getElementById("litxt").style.color = "Goldenrod";
-document.getElementById("p2").innerText = "Hello Monkeys!";
+// document.getElementById("p2").innerText = "Hello Monkeys!";
 document.getElementById("clubhouse").innerText = "@theClubhou.se, You know!";
-document.getElementById("litxt").innerText = "L i s t e n  U P  ! !";
-document.getElementById('alth2').innerText = "Veronica Johnson";
-document.getElementById('para').innerText = "Wow, this coding thing is a cake walk!!";
+// document.getElementById("litxt").innerText = "L i s t e n  U P  ! !";
+// document.getElementById('alth2').innerText = "Veronica Johnson";
+// document.getElementById('para').innerText = "Wow, this coding thing is a cake walk!!";
 </script>
     
     <p>Enter names in the fields, then click "Submit" to submit the form:</p>
@@ -45,8 +52,8 @@ document.getElementById('para').innerText = "Wow, this coding thing is a cake wa
 <form id="frm1" autocomplete="off" action="/action_page.php">
     <div class="autocomplete" style="width:300px;">
     First name: <input type="text" name="fname"><br>
-  Last name: <input type="text" name="lname"><br><br>
-  <input type="button" onclick="myFunction()" value="Submit">
+    Last name: <input type="text" name="lname"><br><br>
+    <input type="button" onclick="myFunction()" value="Submit">
 </form>
 
 <script>
